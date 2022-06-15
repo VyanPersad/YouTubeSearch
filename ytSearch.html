@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube Search</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="ytSearch.css">
+    <link rel="stylesheet" href="fancybox-2.1.7/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="fancybox-2.1.7/source/helpers/jquery.fancybox-buttons.css">
+    <link rel="stylesheet" href="fancybox-2.1.7/source/helpers/jquery.fancybox-thumbs.css">
+    <script src="ytSearch.js"></script>
+    <script src="fancybox-2.1.7/source/jquery.fancybox.pack.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Search<span>Videos</span></h1>
+            <p>Search YouTube Videos</p>
+        </header>
+        <section>
+            <form id="searchForm" name="searchForm" onsubmit="return search()">
+                <div class="searchContainer">
+                    <input type="search" id="query" class="searchField" placeholder="Search YouTube...">
+                    <input type="submit" name="searchBtn" id="searchBtn" value="">
+                </div>
+            </form>
+            <ul id="searchResults"></ul>
+            <div id="buttons"></div>
+        </section>
+    </div>
+</body>
+<footer>
+    <p>Copyright &copy 2022</p>
+</footer>
+
+</html>
