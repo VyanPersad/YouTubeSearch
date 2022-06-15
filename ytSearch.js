@@ -44,13 +44,13 @@ function search() {
         part: 'snippet, id',
         q: q,
         type: 'video',
-        key: 'AIzaSyA184FzL2R1MlQTk2BVPITCA25ulXBi23I'
+        key: 'Your API key here'
     },
         function (data) {
             var nextPGtoken = data.nextPageToken;
             var prevPGtoken = data.prevPageToken;
 
-            console.log(data);
+            //console.log(data);
 
             $.each(data.items, function (i, item) {
                 var output = getOutput(item);
